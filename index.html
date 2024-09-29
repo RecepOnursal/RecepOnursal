@@ -3,32 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recep Onursal</title>
+    <title>Recep Onursal - Academic Profile</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-        function showSection(section) {
-            var sections = document.querySelectorAll('main section');
-            sections.forEach(function(sec) {
-                sec.style.display = 'none'; // Hide all sections
-            });
-            document.getElementById(section).style.display = 'block'; // Show the clicked section
-        }
-    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap">
 </head>
-<body onload="showSection('about')">
+<body>
     <header>
         <nav>
             <ul class="nav-list">
-                <li><a href="#" onclick="showSection('about')">About Me</a></li>
-                <li><a href="#" onclick="showSection('publications')">Publications</a></li>
-                <li><a href="#" onclick="showSection('teaching')">Teaching</a></li>
-                <li><a href="#" onclick="showSection('media')">Media Pieces</a></li>
-                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+                <li><a href="index.html">About Me</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="media.html">Media Pieces</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <div class="container">
+        <!-- Sidebar Section -->
         <aside class="sidebar">
             <img src="your-image-url-here.jpg" alt="Recep Onursal" class="profile-img">
             <h2>Recep Onursal</h2>
@@ -41,33 +35,18 @@
             </div>
         </aside>
 
+        <!-- Main Content Section -->
         <main class="content">
             <section id="about">
                 <h1>About Me</h1>
                 <p>I specialize in peace and conflict studies, critical security studies, and international relations...</p>
             </section>
+        </main>
+    </div>
 
-            <section id="publications" style="display: none;">
-                <h2>Publications</h2>
-                <ul>
-                    <li><strong>Is extremism the ‘new’ terrorism?</strong> (2019) in <em>Terrorism and Political Violence</em></li>
-                    <li><strong>Governing Anxiety, Trauma, and Crisis</strong> (2020) in <em>Middle East Critique</em></li>
-                </ul>
-            </section>
+    <footer>
+        <p>Recep Onursal - Lecturer in Reconciliation and Peacebuilding | Based in the UK & Turkey</p>
+    </footer>
 
-            <section id="teaching" style="display: none;">
-                <h2>Teaching</h2>
-                <ul>
-                    <li>Theories of War</li>
-                    <li>Conflict Resolution and Transformation</li>
-                </ul>
-            </section>
-
-            <section id="media" style="display: none;">
-                <h2>Media Pieces</h2>
-                <ul>
-                    <li><em>Why the Kurdish conflict in Turkey is so intractable</em> - The Conversation (2019)</li>
-                </ul>
-            </section>
-
-            <section id="contact" style="display: none
+</body>
+</html>
