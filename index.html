@@ -3,18 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recep Onursal - Home</title>
+    <title>Recep Onursal</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        function showSection(section) {
+            var sections = document.querySelectorAll('main section');
+            sections.forEach(function(sec) {
+                sec.style.display = 'none'; // Hide all sections
+            });
+            document.getElementById(section).style.display = 'block'; // Show the clicked section
+        }
+    </script>
 </head>
-<body>
+<body onload="showSection('about')">
     <header>
         <nav>
             <ul class="nav-list">
-                <li><a href="index.html">About Me</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="teaching.html">Teaching</a></li>
-                <li><a href="media.html">Media Pieces</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#" onclick="showSection('about')">About Me</a></li>
+                <li><a href="#" onclick="showSection('publications')">Publications</a></li>
+                <li><a href="#" onclick="showSection('teaching')">Teaching</a></li>
+                <li><a href="#" onclick="showSection('media')">Media Pieces</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -37,8 +46,28 @@
                 <h1>About Me</h1>
                 <p>I specialize in peace and conflict studies, critical security studies, and international relations...</p>
             </section>
-        </main>
-    </div>
 
-</body>
-</html>
+            <section id="publications" style="display: none;">
+                <h2>Publications</h2>
+                <ul>
+                    <li><strong>Is extremism the ‘new’ terrorism?</strong> (2019) in <em>Terrorism and Political Violence</em></li>
+                    <li><strong>Governing Anxiety, Trauma, and Crisis</strong> (2020) in <em>Middle East Critique</em></li>
+                </ul>
+            </section>
+
+            <section id="teaching" style="display: none;">
+                <h2>Teaching</h2>
+                <ul>
+                    <li>Theories of War</li>
+                    <li>Conflict Resolution and Transformation</li>
+                </ul>
+            </section>
+
+            <section id="media" style="display: none;">
+                <h2>Media Pieces</h2>
+                <ul>
+                    <li><em>Why the Kurdish conflict in Turkey is so intractable</em> - The Conversation (2019)</li>
+                </ul>
+            </section>
+
+            <section id="contact" style="display: none
