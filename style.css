@@ -1,3 +1,4 @@
+/* Basic styling for the entire page */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,11 +6,13 @@ body {
     background-color: #f4f4f4;
 }
 
+/* Container holds both sidebar and content */
 .container {
     display: flex;
     min-height: 100vh;
 }
 
+/* Styling for the sidebar */
 .sidebar {
     width: 25%;
     background-color: #fff;
@@ -19,6 +22,11 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    position: fixed; /* Keep the sidebar fixed on the left */
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-y: auto; /* Allow scrolling in sidebar if content overflows */
 }
 
 .profile-img {
@@ -48,9 +56,12 @@ h2 {
     text-decoration: underline;
 }
 
+/* Styling for the content area */
 .content {
     width: 75%;
     padding: 40px;
+    margin-left: 25%; /* Push the content area to the right of the sidebar */
+    background-color: #f9f9f9;
 }
 
 .menu {
